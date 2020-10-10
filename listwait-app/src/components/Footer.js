@@ -1,14 +1,14 @@
 import React from 'react'
 import logo from '../img/logo.png'
 
-import './ComponentStyles/Header.css';
+import './ComponentStyles/Footer.css';
 
 const Header = () => {
     return (
         <>
-        <div className="head">
-            <div className="logo">
-                <img src={logo} alt="Logo" />
+        <div className="foot">
+            <div className="text">
+                <h3>List Await 2020</h3>
             </div>
         </div>
         </>
