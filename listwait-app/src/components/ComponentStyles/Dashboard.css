@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+
+.container {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 5%;
+    color: #D9ADAD;
+}
+
+.under img {
+    width: 50%;
+}
+
+.under {
+    margin-bottom: 10%;
+    margin-top: 5%;
+    text-align: center;
+}

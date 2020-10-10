@@ -1,9 +1,8 @@
 import React from 'react'
-import logo from '../img/logo.png'
 
 import './ComponentStyles/Footer.css';
 
-const Header = () => {
+const Footer = () => {
     return (
         <>
         <div className="foot">
@@ -15,4 +14,4 @@ const Header = () => {
     )
 };
 
-export default Header
+export default Footer
