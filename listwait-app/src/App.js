@@ -10,6 +10,7 @@ import './App.scss';
 
 import Create from './components/Create';
 import Dashboard from './components/Dashboard';
+import PrivateRoute from './components/PrivateRoute';
 
 
 class App extends React.Component {
@@ -22,9 +23,9 @@ class App extends React.Component {
           <Route path="/account-create">
             < Create />
           </Route>
-          <Route path="/dashboard">
+          <PrivateRoute path="/dashboard">
             < Dashboard />
-          </Route>
+          </PrivateRoute>
         </Switch>
       </Router>
       </>
