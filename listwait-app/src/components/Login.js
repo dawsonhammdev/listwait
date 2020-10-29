@@ -1,10 +1,13 @@
-import React, {useState} from "react";
+import React, {useState } from "react";
+import {useHistory} from "react-router-dom"
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 import loginImg from "../img/login.svg";
 
 import './ComponentStyles/Register.scss'
 
 const Login = (props) => {
+  const history = useHistory();
+  
   const [logInData, setLogInData] = useState({ username: "", password: "" });
 
   const handleChanges = (event) => {
@@ -14,6 +17,7 @@ const Login = (props) => {
   };
 
   const onSubmit = (e) => {
+    
     e.preventDefault();
     axiosWithAuth()
       .post("/api/auth/login", logInData)
@@ -21,9 +25,9 @@ const Login = (props) => {
         console.log(res.data);
         window.localStorage.setItem("token", res.data.token);
         setLogInData({ username: "", password: "" });
-        props.getID(res.data.id);
+        // props.getID(res.data.id);
         console.log("user id in login", res.data.id);
-        props.history.push("/dashboard");
+        history.push("/dashboard");
       })
       .catch((err) => console.log(err, logInData));
   };

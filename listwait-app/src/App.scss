@@ -1,6 +1,11 @@
 //Custom Fonts
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
+#root {
+  background-image: url(./img/bg2.svg);
+  background-size: cover;
+}
+
 .App {
   text-align: center;
   display: flex;
